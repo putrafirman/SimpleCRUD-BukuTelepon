@@ -1,22 +1,15 @@
 <?php
-  // memanggil file koneksi.php untuk membuat koneksi
   include 'koneksi.php';
 
-  // mengecek apakah di url ada nilai GET id
   if (isset($_GET['id'])) {
-    // ambil nilai id dari url dan disimpan dalam variabel $id
     $id = ($_GET["id"]);
 
-    // menampilkan data mahasiswa dari database yang mempunyai id=$id
     $query = "SELECT * FROM bukutelepon WHERE id='$id'";
     $result = mysqli_query($link, $query);
-    // mengecek apakah query gagal
     if(!$result){
       die ("Query Error: ".mysqli_errno($link).
          " - ".mysqli_error($link));
     }
-    // mengambil data dari database dan membuat variabel" utk menampung data
-    // variabel ini nantinya akan ditampilkan pada form
     $data = mysqli_fetch_assoc($result);
     $id = $data["id"];
     $nama = $data["nama"];
@@ -24,7 +17,6 @@
     $email = $data["email"];
 
   } else {
-    // apabila tidak ada data GET id pada akan di redirect ke index.php
     header("location:index.php");
   }
 
