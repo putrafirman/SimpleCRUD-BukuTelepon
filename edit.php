@@ -33,6 +33,7 @@
         margin: auto;
       }
     </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <h1>Edit Data</h1>
@@ -43,19 +44,19 @@
         <legend>Edit Data Buku Telepon</legend>
           <p>
             <label for="nama">Nama : </label>
-            <input type="text" name="nama" id="nama" value="<?php echo $nama ?>">
+            <input type="text" name="nama" id="nama" value="<?php echo $nama ?>" required="yes">
           </p>
           <p>
             <label for="notelepon">No Telepon : </label>
-            <input type="text" name="notelepon" id="notelepon" value="<?php echo $notelepon ?>">
+            <input type="text" name="notelepon" id="notelepon" value="<?php echo $notelepon ?>" required="yes">
           </p>
           <p >
             <label for="email">Email : </label>
-            <input type="text" name="email" id="email" value="<?php echo $email ?>">
+            <input type="email" name="email" id="email" value="<?php echo $email ?>" required="yes">
           </p>
         </fieldset>
         <p>
-          <input type="submit" name="edit" value="Update Data">
+          <input class="btn btn-success" type="submit" name="edit" value="Update Data">
         </p>
       </form>
   </div>

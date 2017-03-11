@@ -14,10 +14,12 @@
         text-align: center;
       }
     </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body>
+
+  <body class="container">
     <h1>Tabel Buku Telepon</h1>
-    <center><a href="input.php">Input Data &Gt; </a></center>
+    <center><a href="input.php"><button class="btn btn-success" >Input Data</button></a></center>
     <br/>
     <table border="1">
       <tr>
