@@ -1,0 +1,8 @@
+Halaman sebuah KRS pada Sistem Akademik Mahasiswa bisa ditampilkan dalam jendela browser karena terdapat proses pengiriman data dari server. Hal ini bisa terjadi karena user meminta (request) dengan mengklik link maupun url pada halaman yang menuju halaman KRS.
+Proses teknisnya.
+1. Halaman Login
+1.1 Mahasiswa memasukan NIM dan Password
+1.1 Jika NIM atau Password salah, akan terdapat peringatan
+2. Jika sukses, maka akan tampil halaman biodata mahasiswa.
+3. Mahasiswa mengklik link yang menuju halaman KRS.
+4. Mahasiswa melihat halaman KRS
